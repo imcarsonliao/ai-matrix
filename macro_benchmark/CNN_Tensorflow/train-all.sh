@@ -1,6 +1,6 @@
 #!/bin/bash
 
-models='googlenet resnet50 resnet152 densenet121 synNet'
+models='alexnet vgg16 googlenet resnet50 resnet152 densenet121 synNet'
 batchs='16 32 64'
 num_batches=500
 NUM_ACCELERATORS=${NUM_ACCELERATORS:-1}

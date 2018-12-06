@@ -80,7 +80,7 @@ def process_train():
                    'The benchmark does its best to exclude CPU work from performance measurement and approximates the accelerator performance.'])
     table1.append(['model','batch 16','batch 32','batch 64'])
 
-    models = ['googlenet','resnet50','resnet152', 'densenet121', 'synNet']
+    models = ['alexnet', 'vgg16', 'googlenet','resnet50','resnet152', 'densenet121', 'synNet']
     bs = ['16', '32', '64']
     
     for md in models:
