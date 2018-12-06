@@ -22,7 +22,7 @@ do
     echo "Running training with batch size of $batch"
     echo "----------------------------------------------------------------"
     start=`date +%s%N`
-    python train_ssd_network.py \
+    python3 train_ssd_network.py \
         --train_dir=${TRAIN_DIR} \
         --dataset_dir=${DATASET_DIR} \
         --dataset_name=pascalvoc_2007 \

@@ -20,8 +20,8 @@ if [ ! -d "VOC2007" ]; then
     rm -r VOCdevkit
     mkdir trainval_tf test_tf
     cd ..
-    python tf_convert_data.py --dataset_name=pascalvoc --dataset_dir=./VOC2007/trainval/ --output_name=voc_2007_train --output_dir=./VOC2007/trainval_tf
-    python tf_convert_data.py --dataset_name=pascalvoc --dataset_dir=./VOC2007/test/ --output_name=voc_2007_test --output_dir=./VOC2007/test_tf
+    python3 tf_convert_data.py --dataset_name=pascalvoc --dataset_dir=./VOC2007/trainval/ --output_name=voc_2007_train --output_dir=./VOC2007/trainval_tf
+    python3 tf_convert_data.py --dataset_name=pascalvoc --dataset_dir=./VOC2007/test/ --output_name=voc_2007_test --output_dir=./VOC2007/test_tf
 else
     echo "VOC2007 already exists"
 fi

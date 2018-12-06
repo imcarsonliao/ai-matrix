@@ -15,7 +15,7 @@ do
 	echo "Running training with batch size of $batch"
 	echo "----------------------------------------------------------------"
 	start=`date +%s%N`
-	python train.py --batch_size $batch |& tee ../results/result_train_${batch}.txt
+	python3 train.py --batch_size $batch |& tee ../results/result_train_${batch}.txt
 	end=`date +%s%N`
 	total_time=`bc <<< "scale = 3; ($end-$start)/1000000000"`
 	echo "System performance in seconds is: $total_time" >> ../results/result_train_${batch}.txt

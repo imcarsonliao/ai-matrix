@@ -17,7 +17,7 @@ do
     echo "----------------------------------------------------------------"
     rm -r nmt_attention_model
     start=`date +%s%N`
-    python -m nmt.nmt \
+    python3 -m nmt.nmt \
         --attention=scaled_luong \
         --attention_architecture=gnmt \
         --src=vi --tgt=en \

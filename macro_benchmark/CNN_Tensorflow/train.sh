@@ -5,7 +5,7 @@ NUM_ACCELERATORS=${NUM_ACCELERATORS:-1}
 echo "NUM_ACCELERATORS=${NUM_ACCELERATORS}"
 for batch in $batchs
 do
-    python nvcnn.py --model=$models \
+    python3 nvcnn.py --model=$models \
                 --batch_size=$batch \
                 --num_gpus=$NUM_ACCELERATORS \
                 --num_batches=500   \

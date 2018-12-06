@@ -1,6 +1,6 @@
 #!/bin/bash
 
-models='googlenet resnet50 resnet152 densenet121 synNet'
+models='alexnet vgg16 googlenet resnet50 resnet152 densenet121 synNet'
 batchs='16 32 64'
 num_batches=500
 NUM_ACCELERATORS=${NUM_ACCELERATORS:-1}
@@ -21,7 +21,7 @@ do
     	echo "Running $md with batch size of $batch"
     	echo "----------------------------------------------------------------"
         start=`date +%s%N`
-        python nvcnn.py --model=$md \
+        python3 nvcnn.py --model=$md \
                     --batch_size=$batch \
                     --num_gpus=$NUM_ACCELERATORS \
                     --num_batches=$num_batches   \
@@ -38,4 +38,4 @@ do
     done
 done
 
-python process_results.py --train
+python3 process_results.py --train

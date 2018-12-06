@@ -3,8 +3,8 @@
 mkdir raw_data
 cd utils
 ./0_download_raw.sh
-python 1_convert_pd.py
-python 2_remap_id.py
+python3 1_convert_pd.py
+python3 2_remap_id.py
 cd ../din
-python build_dataset.py
+python3 build_dataset.py
 
