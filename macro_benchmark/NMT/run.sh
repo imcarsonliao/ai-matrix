@@ -53,7 +53,7 @@ do
     start=`date +%s%N`
     python -m nmt.nmt \
         --src=en --tgt=vi \
-        --ckpt=./envi_model_1/translate.ckpt \
+        --ckpt=./nmt_attention_model/translate.ckpt-3000 \
         --hparams_path=nmt/standard_hparams/iwslt15.json \
         --out_dir=envi \
         --vocab_prefix=dataset/en_vi/vocab \

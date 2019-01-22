@@ -5,6 +5,6 @@ if [ ! -f "mask_rcnn_coco.h5" ]; then
 fi
 
 if [ ! -d "coco_dataset" ]; then
-    python download_coco.py
+    python3 download_coco.py
 fi
 
